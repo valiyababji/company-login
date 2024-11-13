@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhanvin's HRM Portal - Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/2.png" type="image/png">
+    <script src="script.js"></script>
+</head>
+<style>
+
+</style>
+
+<body>
+
+    <!-- Centered Header -->
+    <div class="back">
+        <div class="header">
+            WELCOME TO DHANVIN'S HRM PORTAL
+        </div>
+
+        <!-- Navbar -->
+        <div class="navbar">
+
+            <a href="#">LOGIN</a>
+            <a href="#">REGISTER</a>
+            <a href="#contact">CONTACT US</a>
+            <a href="#map">MAP</a>
+        </div>
+
+        <!-- Sign Up Form -->
+        <div class="form-container" id="signup-form">
+            <h2>SIGN UP</h2>
+
+            <input type="text" id="first-name" placeholder="First Name">
+            <input type="text" id="last-name" placeholder="Last Name">
+            <input type="email" id="email" placeholder="Enter Your Email">
+            <input type="text" id="otp" placeholder="OTP" style="flex: 2;">
+            <div style="display: flex; gap: 10px; margin-bottom: 10px;">
+
+                <button class="send-btn" onclick="sendOTP()">SEND</button>
+                <button class="verify-btn" onclick="verifyOTP()">VERIFY</button>
+            </div>
+
+            <input type="text" id="phone" placeholder="+91 888555XXXX">
+            <input type="text" id="designation" placeholder="Designation (e.g., CEO)">
+
+            <input type="password" id="password" placeholder="Password (8-15 characters)">
+            <div class="error-message" id="password-error"></div>
+
+            <button class="register-btn" onclick="register()">REGISTER</button>
+        </div>
+
+    </div>
+    <div class="line"></div>
+
+    <!-- Map Section -->
+    <div id="map">
+        <center>
+            <h3>Company Location</h3>
+        </center>
+        <!-- Placeholder for the map -->
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15223.63893285128!2d78.5787988!3d17.464034!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9b004c1c59b7%3A0x8ba937ca10d862d3!2sDhanvin%20IT%20Solutions!5e0!3m2!1sen!2sin!4v1731504877156!5m2!1sen!2sin"
+            width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <center>
+            <p>Map showing the company location here.</p>
+        </center>
+    </div>
+
+    <!-- Contact Section -->
+
+    <div id="contact" class="cont">
+        <h3>About Our Company</h3>
+        <p>We are a leading HRM solutions provider, focused on enhancing organizational performance through
+            effective
+            employee management and support.</p>
+        <h4>Contact Us</h4>
+        <p>Phone: +91 888555XXXX</p>
+        <p>Email: info@dhanvinhrm.com</p>
+        <p>Address: 123 HRM St., Business City, Country</p>
+    </div>
+
+
+
+</body>
+
+</html>

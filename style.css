@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.back {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.back::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("images/1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(8px);
+    /* Apply blur only to the pseudo-element */
+    z-index: -1;
+    /* Places it behind all content */
+    opacity: 0.8;
+    /* Optional: adds slight transparency */
+}
+
+
+.header {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    color: black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    /* Ensure it stays above the blurred background */
+    position: relative;
+    /* So it positions correctly within the blurred background */
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+}
+
+/* Sign Up Form */
+.form-container {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    padding: 20px;
+    width: 320px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    /* Added margin to position form below the header */
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+    color: black;
+}
+
+.form-container input[type="text"],
+.form-container input[type="password"],
+.form-container input[type="email"],
+.form-container input[type="button"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 14px;
+    color: black;
+}
+
+/* buttons  */
+.send-btn,
+.verify-btn,
+.register-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+
+/* Message Styling */
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin: 10px 0;
+}
+
+.success-message {
+    color: green;
+    font-size: 12px;
+    margin: 10px 0;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    /* text-align: center; */
+    background: #cccccc;
+
+}
+
+.about {
+    text-align: center;
+    /* padding: 20px; */
+    background: white;
+    border-radius: 8px;
+    width: 80%;
+    margin-top: 10px;
+
+}
+
+.line {
+    margin-top: 10px;
+    background-color: black;
+    height: 5px;
+    width: 100%;
+}
+
+/* Contact and Map Styling */
+#contact {
+    padding-top: 50px;
+    background: #000000;
+    text-align: center;
+    height: 200px;
+    color: white;
+}
+
+#map {
+    padding: 20px;
+    /* background: rgba(127, 85, 85, 0.7); */
+    color: black;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+}
